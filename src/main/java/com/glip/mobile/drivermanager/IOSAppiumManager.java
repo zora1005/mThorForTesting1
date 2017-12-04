@@ -32,9 +32,9 @@ public class IOSAppiumManager { //定义一个类
         capabilities.setCapability("platformName", "iOS");
         capabilities.setCapability("newCommandTimeout", "30000");
         capabilities.setCapability("deviceName", "iPhone Simulator");
-        capabilities.setCapability("platformVersion", "10.2");
-        capabilities.setCapability("udid", "FCD5C9FC-A59D-4234-BC37-485D9CAAFA31");
-        capabilities.setCapability("app", "/Users/zora.zheng/Downloads/Glip-3.app");
+        capabilities.setCapability("platformVersion", "11.1");
+        capabilities.setCapability("udid", "B48D0FB9-6013-4A5F-8ED8-D2863FD9ACAE");
+        capabilities.setCapability("app", "/Users/zora.zheng/Downloads/Glip.app");
         capabilities.setCapability("autoAcceptAlerts", "True");
         capabilities.setCapability("unicodeKeyboard", "True");
         capabilities.setCapability("resetKeyboard", "True");

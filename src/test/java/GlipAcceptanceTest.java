@@ -13,7 +13,8 @@ import org.openqa.selenium.support.PageFactory;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/features/SignIn")
+@CucumberOptions(features = "src/features/SignIn", format = {"junit:reports/junit/junit.xml", "html:reports/html"})
+//@CucumberOptions(format = {"junit:reports/junit/junit.xml", "html:reports/html"})
 
 public class GlipAcceptanceTest {
 

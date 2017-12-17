@@ -41,7 +41,7 @@ public class GlipEmailSignInScripts {
     @When("^User inputs Email \"([^\"]*)\" and Password \"([^\"]*)\"$")
     public void userInputsEmailAndPassword(String emailAddress, String passWord) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        signinPage.glipEmailLogin(emailAddress,passWord);
+        //signinPage.glipEmailLogin(emailAddress,passWord);
     }
 
     @Then("^User can sign in app$")

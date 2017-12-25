@@ -68,5 +68,7 @@ public class SignInPage extends BasePage {
         if(butSignIn != null){
             butSignIn.click();
         }
+
+        setNativeContext();
     }
 }

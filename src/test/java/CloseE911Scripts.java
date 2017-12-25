@@ -1,16 +1,13 @@
 import com.glip.mobile.drivermanager.IOSAppiumManager;
-import com.glip.mobile.pages.E911Page;
-import com.glip.mobile.pages.WelcomePage;
+import com.glip.mobile.pages.iOS.E911Page;
 import cucumber.api.PendingException;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.support.PageFactory;
 
-//import static com.glip.mobile.pages.E911Page.getE911Page;
+//import static com.glip.mobile.pages.iOS.E911Page.getE911Page;
 
 /**
  * Created by zora.zheng on 07/08/2017.

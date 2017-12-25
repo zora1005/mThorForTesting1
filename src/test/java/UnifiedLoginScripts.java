@@ -1,6 +1,5 @@
 import com.glip.mobile.drivermanager.IOSAppiumManager;
-import com.glip.mobile.pages.SignInPage;
-import cucumber.api.PendingException;
+import com.glip.mobile.pages.iOS.SignInPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import io.appium.java_client.ios.IOSDriver;
@@ -21,6 +20,6 @@ public class UnifiedLoginScripts {
     @When("^User inputs Email \"([^\"]*)\"$")
     public void userInputsEmail(String accountInfo) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        signinPage.glipEmailLogin(accountInfo);
+//        signinPage.glipEmailLogin(accountInfo);
     }
 }

@@ -1,7 +1,8 @@
-package com.glip.mobile.pages;
+package com.glip.mobile.pages.iOS;
 
 
 import com.glip.mobile.drivermanager.IOSDriverWait;
+import com.glip.mobile.pages.iOS.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

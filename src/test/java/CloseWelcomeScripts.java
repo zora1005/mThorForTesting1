@@ -1,12 +1,8 @@
 import com.glip.mobile.drivermanager.IOSAppiumManager;
-import com.glip.mobile.pages.SignInPage;
-import com.glip.mobile.pages.WelcomePage;
-import cucumber.api.PendingException;
-import cucumber.api.java.Before;
+import com.glip.mobile.pages.iOS.WelcomePage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.support.PageFactory;
 

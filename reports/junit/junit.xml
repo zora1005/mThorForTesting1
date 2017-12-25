@@ -1,50 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.998184">
-<testcase classname="glipEmailSignIn feature" name="Unified Login with email" time="14.998184">
-<failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 551 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'&#10;System info: host: 'LMXMN066.local', ip: 'fe80:0:0:0:141e:76f8:b562:a12%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_151'&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Capabilities [{app=/Users/zora.zheng/Downloads/Glip.app, networkConnectionEnabled=false, databaseEnabled=false, deviceName=iPhone Simulator, platform=MAC, newCommandTimeout=30000, platformVersion=11.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=True, platformName=iOS, udid=B48D0FB9-6013-4A5F-8ED8-D2863FD9ACAE, resetKeyboard=True, autoAcceptAlerts=True}]&#10;Session ID: cecff873-3991-4199-a45c-47fb30c639fb&#10;*** Element info: {Using=id, value=loginCredentialNext}&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)&#10;&#9;at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)&#10;&#9;at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)&#10;&#9;at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)&#10;&#9;at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)&#10;&#9;at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)&#10;&#9;at org.openqa.selenium.By$ById.findElement(By.java:218)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)&#10;&#9;at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)&#10;&#9;at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#10;&#9;at com.sun.proxy.$Proxy15.click(Unknown Source)&#10;&#9;at com.glip.mobile.pages.SignInPage.glipEmailLogin(SignInPage.java:44)&#10;&#9;at UnifiedLoginScripts.userInputsEmail(UnifiedLoginScripts.java:24)&#10;&#9;at ✽.When User inputs Email &quot;zoraandtest8@gmail.com&quot;(glipEmailSignIn.feature:10)&#10;"><![CDATA[Given App isn't logged in...................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="282.83149">
+<testcase classname="glipEmailSignIn feature" name="Unified Login with email" time="282.83149">
+<system-out><![CDATA[Given App isn't logged in...................................................passed
 Given User has valid Email..................................................passed
 When <WelcomePage>User tap "Sign In to Glip" button.........................passed
-When User inputs Email "zoraandtest8@gmail.com".............................failed
-Then User can sign in app...................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 551 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'LMXMN066.local', ip: 'fe80:0:0:0:141e:76f8:b562:a12%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_151'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/zora.zheng/Downloads/Glip.app, networkConnectionEnabled=false, databaseEnabled=false, deviceName=iPhone Simulator, platform=MAC, newCommandTimeout=30000, platformVersion=11.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=True, platformName=iOS, udid=B48D0FB9-6013-4A5F-8ED8-D2863FD9ACAE, resetKeyboard=True, autoAcceptAlerts=True}]
-Session ID: cecff873-3991-4199-a45c-47fb30c639fb
-*** Element info: {Using=id, value=loginCredentialNext}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:453)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
-	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at com.glip.mobile.pages.SignInPage.glipEmailLogin(SignInPage.java:44)
-	at UnifiedLoginScripts.userInputsEmail(UnifiedLoginScripts.java:24)
-	at ✽.When User inputs Email "zoraandtest8@gmail.com"(glipEmailSignIn.feature:10)
-]]></failure>
+When User inputs Email "zoraandtest8@gmail.com".............................passed
+Then User can sign in app...................................................passed
+]]></system-out>
 </testcase>
 </testsuite>

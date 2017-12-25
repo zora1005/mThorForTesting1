@@ -1,19 +1,13 @@
-package com.glip.mobile.pages;
+package com.glip.mobile.pages.iOS;
 
-import com.glip.mobile.drivermanager.IOSDriverWait;
-import io.appium.java_client.ios.IOSDriver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import com.glip.mobile.pages.iOS.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-
-import javax.annotation.Nullable;
 
 /**
  * Created by zora.zheng on 07/08/2017.
  */
-public class WelcomePage extends BasePage{
+public class WelcomePage extends BasePage {
     //查找元素
     @FindBy(id ="SignInButton") //便捷的注解方式
     public WebElement signInButton; //属性一般小写

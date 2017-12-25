@@ -7,7 +7,8 @@ Feature: glipEmailSignIn feature
     Given App isn't logged in
     Given User has valid Email
     When <WelcomePage>User tap "Sign In to Glip" button
-    When User inputs Email "zoraandtest8@gmail.com"
+    When <WebView_EmailorPhoneScreen>User inputs Email "zoraandtest8@gmail.com"
+    When <WebView_PasswordScreen>User inputs password "Test!123"
     Then User can sign in app
 
 

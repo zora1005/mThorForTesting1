@@ -1,5 +1,6 @@
 import com.glip.mobile.drivermanager.IOSAppiumManager;
 import com.glip.mobile.pages.iOS.SignInPage;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import io.appium.java_client.ios.IOSDriver;
@@ -17,9 +18,15 @@ public class UnifiedLoginScripts {
         //throw new PendingException();
     }
 
-    @When("^User inputs Email \"([^\"]*)\"$")
-    public void userInputsEmail(String accountInfo) throws Throwable {
+    @When("^<WebView_EmailorPhoneScreen>User inputs Email \"([^\"]*)\"$")
+    public void webview_emailorphonescreenUserInputsEmail(String accountInfo) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-//        signinPage.glipEmailLogin(accountInfo);
+        signinPage.glipEmailLogin(accountInfo);
+    }
+
+    @When("^<WebView_PasswordScreen>User inputs password \"([^\"]*)\"$")
+    public void webview_passwordscreenUserInputsPassword(String passwordInfo) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        signinPage.glipEmailLoginPassword(passwordInfo);
     }
 }

@@ -110,6 +110,16 @@
             <version>1.2.5</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.ringcentral.glip.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>4.2.10</version>
+        </dependency>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>5.0.0-BETA8</version>
+        </dependency>
 
 
     </dependencies>

@@ -3,6 +3,7 @@ package com.glip.mobile.drivermanager;
 import org.openqa.selenium.By;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -65,17 +66,19 @@ public class IOSAppiumManager { //定义一个类
      * @param by               定位方式
      * @param waitTime         等待时间
      */
-    public static void waitForVisible(IOSDriver driver, final By by, int waitTime) {
+    public static WebElement waitForVisible(IOSDriver driver, final By by, int waitTime) {
         WebDriverWait wait = new WebDriverWait(driver, waitTime);
+        WebElement element = null;
         for (int attempt = 0; attempt < waitTime; attempt++) {
             try {
-                driver.findElement(by);
+                element = driver.findElement(by);
                 break;
             } catch (Exception e) {
                 driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
             }
         }
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        return element;
     }
 }
 

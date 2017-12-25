@@ -48,6 +48,7 @@ public class IOSAppiumManager { //定义一个类
             e.printStackTrace();
         }
 
+
     }
     //通过getAppiumDriver（）方法将属性driver对外提供
     public IOSDriver getAppiumDriver(){

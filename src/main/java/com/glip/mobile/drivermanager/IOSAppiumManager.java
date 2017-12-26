@@ -39,7 +39,8 @@ public class IOSAppiumManager { //定义一个类
         capabilities.setCapability("deviceName", "iPhone Simulator");
         capabilities.setCapability("platformVersion", "11.1");
         capabilities.setCapability("udid", "B48D0FB9-6013-4A5F-8ED8-D2863FD9ACAE");
-        capabilities.setCapability("app", "/Users/zora.zheng/Downloads/"+System.getProperty("app"));
+//        capabilities.setCapability("app", "/Users/zora.zheng/Downloads/"+System.getProperty("app"));
+        capabilities.setCapability("app", "/Users/zora.zheng/Downloads/Glip.app");
         capabilities.setCapability("autoAcceptAlerts", "True");
         capabilities.setCapability("unicodeKeyboard", "True");
         capabilities.setCapability("resetKeyboard", "True");

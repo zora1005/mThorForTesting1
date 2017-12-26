@@ -32,7 +32,7 @@
                         true<!-- 因为要执行Cucumber -->
                     </testFailureIgnore>
                     <includes>
-                        <include>**/CucumberStart.java</include>
+                        <include>**/GlipAcceptanceTest.java</include>
                     </includes>
                 </configuration>
             </plugin>

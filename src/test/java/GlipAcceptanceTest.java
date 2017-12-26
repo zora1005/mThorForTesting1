@@ -5,7 +5,6 @@ import io.appium.java_client.AppiumDriver;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.support.PageFactory;
 
 
 /**

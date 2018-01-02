@@ -45,7 +45,6 @@ public class CloseE911Scripts {
     @Then("^User doesn't get alert$")
     public void userDoesnTGetAlert() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
     }
 
     @Given("^User has never closed E(\\d+) before$")

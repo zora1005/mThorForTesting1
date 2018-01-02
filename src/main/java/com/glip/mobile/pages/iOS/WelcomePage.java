@@ -1,6 +1,8 @@
 package com.glip.mobile.pages.iOS;
 
+import com.glip.mobile.drivermanager.IOSAppiumManager;
 import com.glip.mobile.pages.iOS.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -9,8 +11,8 @@ import org.openqa.selenium.support.FindBy;
  */
 public class WelcomePage extends BasePage {
     //查找元素
-    @FindBy(id ="SignInButton") //便捷的注解方式
-    public WebElement signInButton; //属性一般小写
+//    @FindBy(id ="SignInButton") //便捷的注解方式
+//    public WebElement signInButton; //属性一般小写
 
 
     public void tapSignInButton() {
@@ -24,8 +26,13 @@ public class WelcomePage extends BasePage {
 //                    }
 //
 //                });
+        WebElement signInButton = IOSAppiumManager.waitForVisible(driver, By.id("SignInButton"),60);
+        if(signInButton != null){
+            signInButton.click();
+        }
+
         //对查找的元素进行操作
-        signInButton.click();
+//        signInButton.click();
         //法2：查找元素，并对元素进行操作
         //driver.findElement(By.id("SignInButton")).click();
     }

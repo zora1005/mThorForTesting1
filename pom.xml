@@ -8,22 +8,12 @@
     <artifactId>CucumberDemo1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
-
-        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
-        <dependency>
-            <groupId>io.appium</groupId>
-            <artifactId>java-client</artifactId>
-            <version>5.0.0-BETA8</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.4.0</version>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
         <dependency>
@@ -37,14 +27,7 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>22.0</version>
-        </dependency><!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-safari-driver -->
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-safari-driver</artifactId>
-            <version>3.4.0</version>
         </dependency>
-
 
         <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
         <dependency>
@@ -60,12 +43,6 @@
             <version>4.12</version>
         </dependency>
 
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
-            <scope>test</scope>
-        </dependency>
 
         <dependency>
             <groupId>net.masterthought</groupId>
@@ -73,13 +50,6 @@
             <version>3.9.0</version>
         </dependency>
 
-
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>com.ringcentral.glip.appium</groupId>
             <artifactId>java-client</artifactId>
@@ -90,6 +60,13 @@
             <artifactId>java-client</artifactId>
             <version>5.0.0-BETA8</version>
         </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.2.5</version>
+            <scope>test</scope>
+        </dependency>
+
 
 
     </dependencies>

@@ -1,6 +1,9 @@
 package com.glip.mobile.drivermanager;
 
 import org.openqa.selenium.By;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.WebElement;
@@ -20,6 +23,7 @@ import java.util.concurrent.TimeUnit;
  * 实例化类的一个对象，这个对象用private（其他类不可直接调用，可以通过调类的静态方法getnstance（）使用该对象）和 static（其他类在用该对象的时候可以直接使用，不需要再new对象），
  *
  */
+
 public class IOSAppiumManager { //定义一个类
     //
     private static IOSAppiumManager iosdriver= new IOSAppiumManager(); //实例化类的一个对象
@@ -53,6 +57,7 @@ public class IOSAppiumManager { //定义一个类
 
 
     }
+
     //通过getAppiumDriver（）方法将属性driver对外提供
     public IOSDriver getAppiumDriver(){
         return driver;

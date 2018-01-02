@@ -1,14 +1,8 @@
 package com.glip.mobile.pages.iOS;
 
 import com.glip.mobile.drivermanager.IOSAppiumManager;
-import com.glip.mobile.drivermanager.IOSDriverWait;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.ios.LocksIOSDevice;
-import org.junit.After;
-import org.junit.Before;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
+
 
 import java.util.Set;
 
@@ -45,9 +39,9 @@ public class BasePage {
         }
     }
 
-    @After
-    public void tearDown() throws Exception {
-        driver.quit();
-    }
+//    @After
+//    public void tearDown() throws Exception {
+//        driver.quit();
+//    }
 
 }

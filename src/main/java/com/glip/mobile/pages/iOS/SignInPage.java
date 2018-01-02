@@ -1,13 +1,9 @@
 package com.glip.mobile.pages.iOS;
 
 import com.glip.mobile.drivermanager.IOSAppiumManager;
-import com.glip.mobile.pages.iOS.BasePage;
-import io.appium.java_client.ios.IOSDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
-import java.util.Set;
 
 /**
  * Created by zora.zheng on 07/08/2017.

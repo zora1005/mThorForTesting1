@@ -1,4 +1,4 @@
-#Feature: glipEmailSignIn feature
+#Feature: H_E911 feature
 #
 #  @login @p0
 #  Scenario: Accept E911

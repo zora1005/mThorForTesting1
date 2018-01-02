@@ -22,9 +22,9 @@ Feature: glipEmailSignIn feature
 
 
 
-#  @login @p0
-#  Scenario: Accept E911
-#    Given User get to E911 screen
-#    When <E911Page> User accept E911
-#    Then User doesn't get alert
+  @login @p0
+  Scenario: Accept E911
+    Given User get to E911 screen
+    When <E911Page> User accept E911
+    Then User doesn't get alert
 

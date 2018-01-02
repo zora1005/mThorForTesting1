@@ -51,6 +51,5 @@ public class CloseE911Scripts {
     @Given("^User has never closed E(\\d+) before$")
     public void userHasNeverClosedEBefore(int arg0) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
     }
 }

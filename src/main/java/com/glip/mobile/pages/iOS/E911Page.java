@@ -1,6 +1,7 @@
 package com.glip.mobile.pages.iOS;
 
 
+import com.glip.mobile.drivermanager.IOSAppiumManager;
 import com.glip.mobile.drivermanager.IOSDriverWait;
 import com.glip.mobile.pages.iOS.BasePage;
 import org.openqa.selenium.By;
@@ -32,18 +33,9 @@ public class E911Page extends BasePage {
 
     public boolean e911Display() {
 //wait for 60s if WebElemnt show up less than 60s , then return , until 60s
-        WebElement e911Title = new IOSDriverWait(driver, 60)
-                .until(new ExpectedCondition<WebElement>() {
 
-                    @Nullable
-                    public WebElement apply(@Nullable WebDriver webDriver) {
+        WebElement e911Title = IOSAppiumManager.waitForVisible(driver, By.xpath("//XCUIElementTypeOther[@name=\"Emergency Services Disclaimer\"]"),60);
 
-                        return webDriver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Glip\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther"));
-
-                    }
-
-
-                });
         if(e911Title != null){
             System.out.println("Sign in app successfully");
         }
@@ -51,16 +43,7 @@ public class E911Page extends BasePage {
     }
 
     public void acceptE911(){
-        WebElement e911Content = new IOSDriverWait(driver, 60)
-                .until(new ExpectedCondition<WebElement>() {
-
-                    @Nullable
-                    public WebElement apply(@Nullable WebDriver webDriver) {
-                        return webDriver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Glip\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeWebView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther"));
-                    }
-
-                });
-
+        WebElement e911Content = IOSAppiumManager.waitForVisible(driver, By.xpath("//XCUIElementTypeApplication[@name=\"Glip\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeWebView/XCUIElementTypeOther"),60);
         if(e911Content != null){
             e911AcceptBtn.click();
         }
@@ -68,16 +51,7 @@ public class E911Page extends BasePage {
     }
 
     public void decineE911(){
-        WebElement e911Content = new IOSDriverWait(driver, 60)
-                .until(new ExpectedCondition<WebElement>() {
-
-                    @Nullable
-                    public WebElement apply(@Nullable WebDriver webDriver) {
-                        return webDriver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Glip\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeWebView/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther"));
-                    }
-
-                });
-
+        WebElement e911Content = IOSAppiumManager.waitForVisible(driver, By.xpath("//XCUIElementTypeApplication[@name=\"Glip\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeWebView/XCUIElementTypeOther"),60);
         if(e911Content != null){
             e911DeclineBtn.click();
         }

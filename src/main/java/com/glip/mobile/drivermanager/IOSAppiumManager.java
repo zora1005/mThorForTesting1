@@ -86,6 +86,12 @@ public class IOSAppiumManager { //定义一个类
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         return element;
     }
+
+    public void quit() {
+        driver.quit();
+    }
+
+
 }
 
 

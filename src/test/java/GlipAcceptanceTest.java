@@ -2,6 +2,8 @@ import com.glip.mobile.drivermanager.IOSAppiumManager;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.ios.IOSDriver;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
@@ -43,6 +45,11 @@ import org.junit.runner.RunWith;
 //@CucumberOptions(format = {"junit:reports/junit/junit.xml", "html:reports/html"})
 
 public class GlipAcceptanceTest {
+
+    @AfterClass
+    public static void quit(){
+        IOSAppiumManager.getInstance().quit();
+    }
 
 //    @BeforeClass
 //    public void before() {

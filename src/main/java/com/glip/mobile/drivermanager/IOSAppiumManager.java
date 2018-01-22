@@ -1,5 +1,6 @@
 package com.glip.mobile.drivermanager;
 
+import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.By;
 import org.junit.After;
 import org.junit.Before;
@@ -12,6 +13,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -36,7 +38,33 @@ public class IOSAppiumManager { //定义一个类
 
     //构造函数，方法名跟类名是完全一致的，私有的其他地方用不了
     private IOSAppiumManager() {
+        //        capabilities.setCapability("app", "/Users/zora.zheng/Downloads/Glip.app");
+//
+/**
+ * 获取app的相对路径
+ *       File appDir = new File(System.getProperty("user.dir"),
+ *       		"../../../apps/TestApp/build/release-iphonesimulator");
+ *       File app = new File(appDir, "TestApp.app");
+ *
+ *
+ *      在driver里面获取app的绝对路径
+ *      capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+
+ */
+
+/**
+ * 获取app的绝对路径
+ *       String path = "http://10.32.52.92/manual/resources/Glip-s-xmnlab-ucc.zip";
+ *       File app = new File(path);
+ *
+ *      在driver里面获取app的绝对路径
+ *      capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+
+ */
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
+ //       capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
         capabilities.setCapability("platformName", "iOS");
         capabilities.setCapability("newCommandTimeout", "30000");
@@ -44,7 +72,9 @@ public class IOSAppiumManager { //定义一个类
         capabilities.setCapability("platformVersion", "11.1");
         capabilities.setCapability("udid", "B48D0FB9-6013-4A5F-8ED8-D2863FD9ACAE");
 //        capabilities.setCapability("app", "/Users/zora.zheng/Downloads/"+System.getProperty("app"));
-        capabilities.setCapability("app", "/Users/zora.zheng/Downloads/Glip.app");
+        capabilities.setCapability("app", System.getProperty("myApp"));
+//        capabilities.setCapability("app", "http://10.32.52.92/manual/resources/Glip-s-xmnlab-ucc.zip");
+//        capabilities.setCapability("app", app.getAbsolutePath());
         capabilities.setCapability("autoAcceptAlerts", "True");
         capabilities.setCapability("unicodeKeyboard", "True");
         capabilities.setCapability("resetKeyboard", "True");

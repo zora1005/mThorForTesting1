@@ -107,5 +107,26 @@
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.13" level="project" />
     <orderEntry type="library" name="Maven: org.openpnp:opencv:3.2.0-1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-junit:1.2.5" level="project" />
+    <orderEntry type="library" name="Maven: hudson.plugins.sloccount:sloccount:1.24" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins.workflow:workflow-step-api:2.6" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins:structs:1.5" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci:symbol-annotation:1.5" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci:annotation-indexer:1.9" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins.workflow:workflow-job:1.14" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins.workflow:workflow-support:1.14" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins:durable-task:1.5" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.marshalling:jboss-marshalling-river:1.4.9.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.marshalling:jboss-marshalling:1.4.9.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins.workflow:workflow-cps:1.15" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins.workflow:workflow-api:1.15" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins.workflow:workflow-scm-step:1.15" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins:script-security:1.16" level="project" />
+    <orderEntry type="library" name="Maven: org.kohsuke:groovy-sandbox:1.10" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.plugins:scm-api:1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.cloudbees:groovy-cps:1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.ui:jquery-detached:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jenkins-ci.ui:ace-editor:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.cloudbees:diff4j:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jvnet.localizer:localizer:1.12" level="project" />
   </component>
 </module>

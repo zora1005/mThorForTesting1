@@ -48,7 +48,7 @@ public class GlipAcceptanceTest {
 
     @AfterClass
     public static void quit(){
-        IOSAppiumManager.getInstance().quit();
+//        IOSAppiumManager.getInstance().quit();
     }
 
 //    @BeforeClass
